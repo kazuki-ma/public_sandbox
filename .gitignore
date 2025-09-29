@@ -15,3 +15,62 @@
 
 
 *.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual Environments (non-dot directories)
+env/
+venv/
+ENV/
+
+# uv
+uv.lock.python
+
+# pytest
+htmlcov/
+coverage.xml
+*.cover
+*.py,cover
+nosetests.xml
+
+# Jupyter Notebook
+*.ipynb_checkpoints
+
+# mypy
+dmypy.json
+
+# Cython debug symbols
+cython_debug/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+sql_alchemy/test.db
+
+# Alembic
+alembic/versions/*.pyc
+
+# Schema dumps
+sql_alchemy/schema/
+schema/
