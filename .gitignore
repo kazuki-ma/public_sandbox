@@ -1,0 +1,17 @@
+# From https://github.com/github/gitignore/blob/master/Gradle.gitignore
+.*
+**/build/
+**/out/
+
+!.git*
+
+*.class
+*.jar
+*.war
+*.ear
+*.tmp
+*.log
+*.iws
+
+
+*.DS_Store
