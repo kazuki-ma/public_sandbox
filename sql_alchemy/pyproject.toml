@@ -1,0 +1,32 @@
+[project]
+name = "sql-alchemy-feasibility"
+version = "0.1.0"
+description = "SQLAlchemy and Alembic feasibility study"
+requires-python = ">=3.12"
+dependencies = [
+    "sqlalchemy",
+    "alembic",
+    "psycopg2-binary",
+    "pymysql",
+    "python-dotenv",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-asyncio",
+    "pytest-cov",
+    "testcontainers[postgres]",
+]
+dev = [
+    "black",
+    "ruff",
+    "ipython",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["models", "examples", "tests", "utils"]
